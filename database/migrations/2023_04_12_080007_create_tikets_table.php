@@ -13,10 +13,13 @@ return new class extends Migration
     {
         Schema::create('tikets', function (Blueprint $table) {
             $table->id();
+            $table->string('id_tiket');
             $table->string('name');
-            $table->string('id_tiket'); 
-            $table->date('tanggal_tiket');
             $table->string('email');
+            $table->string('lokasi');
+            $table->string('stadium');
+            $table->string('nama_event');
+            $table->date('tanggal_tiket');
 
             $table->timestamps();
         });

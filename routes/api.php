@@ -21,3 +21,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::apiResource('tiketing', TiketController::class);
+
+// search by lokasi
+Route::get('tiketing/bylocation/{lokasi}', [TiketController::class, 'cariLokasi']);
+
+// search by stadium
+Route::get('tiketing/Stadium/{stadium}', [TiketController::class, 'cariStadium']);
