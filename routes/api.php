@@ -52,7 +52,7 @@ Route::PUT('tiketing/update/{id}', [TiketController::class, 'update'])->name('up
 Route::GET('events/', [EventController::class, 'index'])->name('index2');
 
 // 6. show by id
-Route::GET('event/show/{id}', [EventController::class, 'show'])->name('show');
+Route::GET('event/show/{id}', [EventController::class, 'show'])->name('showevent');
 
 // 2. add event detail
 Route::POST('event/add/', [EventController::class, 'store'])->name('add');
