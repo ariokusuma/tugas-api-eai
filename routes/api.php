@@ -49,7 +49,7 @@ Route::PUT('tiketing/update/{id}', [TiketController::class, 'update'])->name('up
 */
 
 // 5. show all events
-Route::GET('events/', [EventController::class, 'index'])->name('index2');
+Route::GET('events/', [EventController::class, 'index'])->name('showevents');
 
 // 6. show by id
 Route::GET('event/show/{id}', [EventController::class, 'show'])->name('showevent');
