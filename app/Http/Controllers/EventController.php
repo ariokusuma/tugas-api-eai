@@ -51,8 +51,10 @@ class EventController extends Controller
     public function show($event)
     {
         $event = Event::findorfail($event);
-        // if ($event)
-        return response()->json($event);
+        if ($event) {
+            return response()->json($event);
+
+        }
     }
 
     /**

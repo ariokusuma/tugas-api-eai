@@ -23,7 +23,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Route::apiResource('tiketing', TiketController::class);
 
-// ========================== Ticket Details =========================
+/*
+|--------------------------------------------------------------------------
+========================== Ticket Details =========================
+|--------------------------------------------------------------------------
+*/
+
 // 1. show all
 Route::GET('tiketing/', [TiketController::class, 'index'])->name('index');
 
@@ -36,7 +41,13 @@ Route::GET('tiketing/{id}', [TiketController::class, 'show'])->name('showid');
 // 4. update
 Route::PUT('tiketing/update/{id}', [TiketController::class, 'update'])->name('update');
 
-// ========================== Event Details =========================
+
+/*
+|--------------------------------------------------------------------------
+========================== Event Details =========================
+|--------------------------------------------------------------------------
+*/
+
 // 5. show all events
 Route::GET('events/', [EventController::class, 'index'])->name('index2');
 
