@@ -55,6 +55,6 @@ Route::GET('events/', [EventController::class, 'index'])->name('showevents');
 Route::GET('event/show/{id}', [EventController::class, 'show'])->name('showevent');
 
 // 2. add event detail
-Route::POST('event/add/', [EventController::class, 'store'])->name('add');
+Route::POST('event/add/', [EventController::class, 'store'])->name('addevent');
 
 
