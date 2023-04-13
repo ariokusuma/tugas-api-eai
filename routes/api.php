@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TiketController;
+use App\Http\Controllers\EventController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,10 +21,29 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::apiResource('tiketing', TiketController::class);
+// Route::apiResource('tiketing', TiketController::class);
 
-// search by lokasi
-Route::get('tiketing/location/{lokasi}', [TiketController::class, 'cariLokasi']);
+// ========================== Ticket Details =========================
+// 1. show all
+Route::GET('tiketing/', [TiketController::class, 'index'])->name('index');
 
-// search by stadium
-Route::get('tiketing/stadium/{stadium}', [TiketController::class, 'cariStadium']);
+// 2. add
+Route::POST('tiketing/add/', [TiketController::class, 'store'])->name('add');
+
+// 3. show by id
+Route::GET('tiketing/{id}', [TiketController::class, 'show'])->name('showid');
+
+// 4. update
+Route::PUT('tiketing/update/{id}', [TiketController::class, 'update'])->name('update');
+
+// ========================== Event Details =========================
+// 5. show all events
+Route::GET('events/', [EventController::class, 'index'])->name('index2');
+
+// 6. show by id
+Route::GET('event/show/{id}', [EventController::class, 'show'])->name('show');
+
+// 2. add event detail
+Route::POST('event/add/', [EventController::class, 'store'])->name('add');
+
+
