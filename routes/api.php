@@ -36,7 +36,7 @@ Route::GET('tiketing/', [TiketController::class, 'index'])->name('showtickets');
 Route::POST('tiketing/add/', [TiketController::class, 'store'])->name('addtickets');
 
 // 3. show by id
-Route::GET('tiketing/{id}', [TiketController::class, 'show'])->name('showid');
+Route::GET('tiketing/{id}', [TiketController::class, 'show'])->name('showticket');
 
 // 4. update
 Route::PUT('tiketing/update/{id}', [TiketController::class, 'update'])->name('update');
