@@ -30,7 +30,7 @@ git clone https://github.com/SI-RPL-2023/SI4408_B_FOOD-RESCUE.git
 ```
 
 - Modify the .env file <br>
-*Configure the .env file according to your local Database System*
+*Configure the .env file according to Your local Database System*
 ```bash
 DB_PORT= <your_mysql_port>
 DB_DATABASE= <your_database_name>
@@ -51,25 +51,11 @@ php artisan key:generate
 php artisan migrate
 ```
 
-- Link Storage
-```bash
-php artisan storage:link
-```
-
-- Install Tailwind Css and Flowbite using NPM:
-```bash
-npm install -D tailwindcss postcss autoprefixer flowbite
-```
-
 - Run the laravel server
 ```bash
 php artisan serve
 ```
 
-- Run the Flowbite Vite
-```bash
-npm run dev
-```
 
 Thank You
 
