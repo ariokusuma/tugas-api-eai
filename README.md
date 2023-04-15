@@ -40,7 +40,7 @@ Project ini merupakan project Endpoint API yang memiliki 7 Endpoint. API yang di
 
 - Clone this Project
 ```bash
-git clone https://github.com/SI-RPL-2023/SI4408_B_FOOD-RESCUE.git
+git clone https://github.com/ariokusuma/tugas-api-eai.git
 ```
 
 - Modify the .env file <br>
