@@ -32,10 +32,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // 1. show all
 Route::GET('tiketing/', [TiketController::class, 'index'])->name('showtickets');
 
-// 3. show by id
+// 2. show by id
 Route::GET('tiketing/{id}', [TiketController::class, 'show'])->name('showticket');
 
-// 2. add
+// 3. add
 Route::POST('tiketing/add/', [TiketController::class, 'store'])->name('addtickets');
 
 // 4. update
